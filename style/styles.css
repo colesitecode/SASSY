@@ -1,0 +1,139 @@
+.navbar {
+  background: #fff;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  z-index: 999;
+  position: relative;
+}
+
+.navbar_logo {
+  margin-left: 10px;
+}
+
+.navbar_bars {
+  opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar_bars {
+    color: #000;
+    opacity: 1;
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    font-size: 2rem;
+  }
+}
+
+.navbar_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  list-style: none;
+  margin-right: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar_menu {
+    display: none;
+  }
+}
+
+.navbar_menu_links {
+  color: #000;
+  text-decoration: none;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar_menu_links:hover {
+  color: #5252c2;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.navbar_menu #button {
+  margin-top: 10px;
+  width: 150px;
+  height: 50px;
+  border: 1px solid #000;
+  outline: none;
+  border-radius: 4px;
+  background: #000;
+  color: #fff;
+  margin-left: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hero {
+  background: url(../images/background-img.svg);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero_container {
+  width: 500px;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.hero_container_btn {
+  position: relative;
+  font-size: 1rem;
+  background: #000;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 2rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.hero_container_btn a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .hero_container {
+    width: 100%;
+  }
+  .hero_container h1 {
+    margin: 0 15px;
+    font-size: 1.3rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
